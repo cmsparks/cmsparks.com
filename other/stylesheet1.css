@@ -1,0 +1,55 @@
+header {
+	display: grid;
+	grid-template-columns: 3fr 1fr 5px;
+	grid-template-rows: .25fr 3fr 5px .75fr;
+	grid-template-areas:
+	"name ddd ba"
+	"port ddd ba"
+	"bb bb bb"
+	"menu menu menu";
+	width: 55vw;
+	margin: 15vw auto;
+	transform: rotate(-45deg);
+}
+
+#name {
+	grid-area: name;
+	font-family: helvetica;
+	font-size: 42pt;
+}
+
+#d3 {
+	grid-area: ddd;
+	writing-mode: vertical-rl;
+        font-family: helvetica;
+        font-size: 42pt;
+}
+
+#portrait {
+	grid-area: port;
+	width:30vw;
+	transform: rotate(45deg);
+}
+
+#cont {
+	grid-area: cont;
+}
+
+#menu {
+	grid-area: menu;
+}
+
+b {
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	box-shadow: -2px -2px 0px 0px #F7A072;
+}
+
+#ba {
+	grid-area: ba;
+}
+
+#bb {
+	grid-area: bb;
+}
