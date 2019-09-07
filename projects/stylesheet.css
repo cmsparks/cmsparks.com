@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap');
+
+* {
+  font-family: 'Garamond', sans-serif;
+}
+header {
+  margin-left: 250px;
+  font-size: 35pt;
+}
