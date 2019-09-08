@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap');
-
 * {
-  font-family: 'Garamond', sans-serif;
+  font-family: 'Garamond', 'EB Garamond', sans-serif;
 }
 header {
   margin-top: 20%;
-  font-size: 50pt;
   text-align: center;
+  font-size: 50pt;
 }
+h1 {
+  font-weight: 400;
+}
+
 #nav {
   color: black;
   font-size: 20pt;
@@ -17,4 +19,17 @@ header {
 a {
   color: black;
   text-align: center;
+}
+
+@media (max-width: 600px) { 
+header {
+  margin-top: 40%;
+  font-size: 30pt;
+  text-align: center;
+}
+#nav {
+  color: black;
+  font-size: 20pt;
+  text-align: center;
+}
 }
