@@ -1,6 +1,6 @@
 <html>
 <head>
-  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 	<meta name="twitter:card" content="player" />
 	<meta name="twitter:site" content="@cmsparks" />
   <meta name="twitter:title" content="2018 Florida Gubernatorial Election" />
@@ -26,6 +26,17 @@
   font-family: "PublicSans", "Helvetica", sans-serif;
   font-weight: normal;
 }
+body {
+  display: grid;
+  grid-template-areas:
+    "map title"
+    "map subtitle"
+    "map table"
+    "map sources";
+  grid-template-columns: 50% 50%;
+  max-
+}
+
 #info {
   margin-top: 150px;
   width: 300px;
@@ -88,8 +99,14 @@ body {
 <script src='pmap.js'></script>
 </head>
 <body>
-<svg width="500px" height="500px" id="svg"></svg>
 <script>
+width = window.innerWidth; height = window.innerHeight;
+pmap.d3.select("body")
+  .append("svg")
+  .attr("id", "svg")
+  .attr("width", Math.round(width/2))
+  .attr("height", Math.round(width/2))
+
 let test = new pmap.Map("./florida.geojson", document.getElementById("svg"))
 </script>
 </body>
