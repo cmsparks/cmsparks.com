@@ -7,8 +7,8 @@
 	<meta name="twitter:description" content="Interactive choropleth map of the 2018 Gubernatorial Election in Florida" />
   <meta name="twitter:image" content="https://cmsparks.com/projects/polling/image.png" />
   <meta name="twitter:player" content="https://cmsparks.com/projects/polling/index.html" />
-	<meta name="twitter:player:width" content="1024" />
-	<meta name="twitter:player:height" content="768" />
+	<meta name="twitter:player:width" content="1920" />
+	<meta name="twitter:player:height" content="1200" />
   <style>
 @font-face {
   font-family: 'PublicSans';
@@ -33,37 +33,34 @@ body {
     "map subtitle"
     "map table"
     "map sources";
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 47.5%;
 }
 #info {
-  margin-top: 16vh;
-  width: 50vh;
-    padding-right: 2vh;
+  margin-top: 7.5vh;
+  width: 50vw;
   float: right;
-}
-h2 {
-  font-size: 4.5vh;
-  text-align: right;
-  font-weight: bold;
-    padding-bottom: 5vh;
 }
 h1 {
   font-weight: bold;
-  font-size: 4.5vh;
+  font-size: 6vh;
   text-align: right;
+  margin-right: 4vw;
+  padding-bottom: 1vh;
 }
 .winner {
   font-weight: bold;
 }
 table {
-  font-size: 3vh;
+  font-size: 4.5vh;
+  margin-right: 4vw;
   float: right;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
 }
 div > #scale {
   float: right;
-  width: 30vw;
-  height: 2vh;
+  width: 25vw;
+  margin-right: 4vw;
+  height: 4vh;
 }
 div > div {
   float: right;
@@ -75,22 +72,27 @@ th{
   text-align: center;
 }
 #scale > p {
-  width: 15vw;
+  width: 12.5vw;
   display: inline-block;
 }
 p {
-  font-size: 3vh;
+  font-size: 4vh;
   color: #888888;
   font-weight: bold;
 }
 svg {
   width: 80vh;
   height: 80vh;
-  padding-top: 15vh;
+  padding-top: 7.5vh;
   padding-left: 5vh;
 }
 #source {
+  padding-top: 10vh;
+  margin-right: 4vw;
   text-align: right;
+}
+#source > p {
+  margin-bottom: 1vh;
 }
 body {
   margin: 0; 
